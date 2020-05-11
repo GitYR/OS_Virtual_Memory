@@ -36,14 +36,11 @@ addition, The size of physical memory of the 'SSUOS' which is OS for practice is
 [OBJECTS]
 
 1. kernel pool과 user pool의 구현 : palloc.c의 init_palloc()에 구현
+   Make kernel pool and user pool : I wrote them in 'init_palloc()' of palloc.c
 
 2. palloc.c의 메모리 할당 및 삭제 함수 구현 : palloc.c의 palloc_get_multiple_page() / palloc_free_multiple_page()에 구현
+   Make memory allocating function and deleting function in palloc.c : 
+   -> 'palloc_get_multiple_page()' and 'palloc_free_multiple_page()'
 
 3. 프로세스 생성 시 page directory 및 page table 구현 : paging.c의 pd_create() / pd_copy() / pt_copy()에 구현
-
-1. Make kernel pool and user pool : I wrote them in 'init_palloc()' of palloc.c
-
-2. Make memory allocating function and deleting function in palloc.c : 
--> 'palloc_get_multiple_page()' and 'palloc_free_multiple_page()'
-
-3. Make page directory and page table when the process is made : 'pd_create()','pd_copy()',and 'pt_copy()' of paging.c
+   Make page directory and page table when the process is made : 'pd_create()','pd_copy()',and 'pt_copy()' of paging.c
